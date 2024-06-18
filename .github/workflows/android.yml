@@ -28,4 +28,4 @@ jobs:
     - name: Upload Artifact
       uses: actions/upload-artifact@v4.3.3
       with:
-        path: ./app/build/outputs/*.apk
+        path: ./app/build/outputs/*/*.apk
