@@ -25,7 +25,12 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
     
-    - name: Upload Artifact
+    - name: Upload Artifact 1
       uses: actions/upload-artifact@v4.3.3
       with:
-        path: ./app/build/outputs/*/*.apk
+        path: ./app/build/outputs/release/app-release.apk
+        
+    - name: Upload Artifact 2
+      uses: actions/upload-artifact@v4.3.3
+      with:
+        path: ./app/build/outputs/debug/app-debug.apk
