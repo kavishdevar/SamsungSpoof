@@ -34,13 +34,13 @@ public class MainHook implements IXposedHookLoadPackage {
         XposedBridge.log("HuskySpoof: Hooking into: " + lpparam.packageName);
 
         // ro.product.manufacturer
-        XposedHelpers.setStaticObjectField(Build.class, "MANUFACTURER", "Google");
+        XposedHelpers.setStaticObjectField(Build.class, "MANUFACTURER", "samsung");
 
         // ro.product.brand
-        XposedHelpers.setStaticObjectField(Build.class, "BRAND", "Google");
+        XposedHelpers.setStaticObjectField(Build.class, "BRAND", "samsung");
 
         // ro.product.device
-        XposedHelpers.setStaticObjectField(Build.class, "DEVICE", "husky");
+        XposedHelpers.setStaticObjectField(Build.class, "DEVICE", "qssi");
 
         // ro.build.tags
         XposedHelpers.setStaticObjectField(Build.class, "TAGS", "release-keys");
@@ -49,40 +49,40 @@ public class MainHook implements IXposedHookLoadPackage {
         XposedHelpers.setStaticObjectField(Build.class, "TYPE", "user");
 
         // ro.product.product
-        XposedHelpers.setStaticObjectField(Build.class, "PRODUCT", "husky");
+        XposedHelpers.setStaticObjectField(Build.class, "PRODUCT", "qssi");
 
         // ro.product.name
-        XposedHelpers.setStaticObjectField(Build.class, "name", "husky");
+        XposedHelpers.setStaticObjectField(Build.class, "name", "dm3qxxx");
 
         // ro.system_ext.model
-        XposedHelpers.setStaticObjectField(Build.class, "SYSTEM_EXT.MODEL", "Pixel 8 Pro");
+        XposedHelpers.setStaticObjectField(Build.class, "SYSTEM_EXT.MODEL", "SM-S918B");
 
         // ro.product.model
-        XposedHelpers.setStaticObjectField(Build.class, "PRODUCT.MODEL", "Pixel 8 Pro");
+        XposedHelpers.setStaticObjectField(Build.class, "PRODUCT.MODEL", "SM-S918B");
 
         // ro.vendor.model
-        XposedHelpers.setStaticObjectField(Build.class, "VENDOR.MODEL", "Pixel 8 Pro");
+        XposedHelpers.setStaticObjectField(Build.class, "VENDOR.MODEL", "SM-S918B");
 
         // ro.odm.model
-        XposedHelpers.setStaticObjectField(Build.class, "ODM.MODEL", "Pixel 8 Pro");
+        XposedHelpers.setStaticObjectField(Build.class, "ODM.MODEL", "SM-S918B");
 
         // ro.system.model
-        XposedHelpers.setStaticObjectField(Build.class, "SYSTEM.MODEL", "Pixel 8 Pro");
+        XposedHelpers.setStaticObjectField(Build.class, "SYSTEM.MODEL", "SM-S918B");
 
         // ro.product.flavor
-        XposedHelpers.setStaticObjectField(Build.class, "FLAVOUR", "husky-user");
+        XposedHelpers.setStaticObjectField(Build.class, "FLAVOUR", "qssi-user");
 
         // ro.soc.model
-        XposedHelpers.setStaticObjectField(Build.class, "SOC.MODEL", "Tensor G3");
+        // XposedHelpers.setStaticObjectField(Build.class, "SOC.MODEL", "Tensor G3");
 
         // ro.product.board
-        XposedHelpers.setStaticObjectField(Build.class, "BOARD", "husky");
+        // XposedHelpers.setStaticObjectField(Build.class, "BOARD", "husky");
 
         // ro.build.id
-        XposedHelpers.setStaticObjectField(Build.class, "ID", "AP1A.240505.005");
+        XposedHelpers.setStaticObjectField(Build.class, "ID", "TP1A.220624.014");
 
         // ro.build.fingerprint
         XposedHelpers.setStaticObjectField(Build.class, "FINGERPRINT",
-                "google/husky/husky:14/AP1A.240505.005/11677807:user/release-keys");
+                "samsung/dm3qxxx/qssi:13/TP1A.220624.014/S918BXXU3AWGJ:user/release-keys");
     }
 }
